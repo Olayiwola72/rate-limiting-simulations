@@ -23,8 +23,6 @@ Try the lab here:
 
 ## 🖼️ Visual Preview
 
-Add visuals here so visitors can immediately see the app in action.
-
 ### App Preview
 
 ![Simulation Lab Screenshot](./docs/media/app-preview.png)
