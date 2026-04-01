@@ -19,9 +19,7 @@ This is not just a demo app. It is a learning and sharing tool for understanding
 
 Try the lab here:
 
-- Live demo: `https://your-live-demo-url.com`
-
-Once you deploy to Vercel, Netlify, or GitHub Pages, replace the placeholder above with your production link.
+- Live demo: https://rate-limiting-simulations.netlify.app/
 
 ## Screenshots And GIFs
 
@@ -47,6 +45,10 @@ Suggested captures:
 Use this image for GitHub repository social preview or link sharing banners:
 
 ![Social Preview](./docs/social-preview.svg)
+
+Production URL:
+
+- https://rate-limiting-simulations.netlify.app/
 
 ## Included Simulations
 

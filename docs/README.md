@@ -2,6 +2,10 @@
 
 This folder stores media and share assets for the repository.
 
+Live site:
+
+- https://rate-limiting-simulations.netlify.app/
+
 ## Structure
 
 - `media/` for screenshots, walkthrough GIFs, and README visuals
