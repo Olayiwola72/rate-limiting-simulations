@@ -1,0 +1,64 @@
+$font-family-base: "SF Pro Display", "SF Pro Text", "Plus Jakarta Sans", "Inter", "Segoe UI", sans-serif;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-slate-975: #05070c;
+$color-slate-950: #020617;
+$color-slate-900: #0f172a;
+$color-slate-800: #1e293b;
+$color-slate-700: #334155;
+$color-slate-600: #475569;
+$color-slate-500: #64748b;
+$color-slate-400: #94a3b8;
+$color-slate-300: #cbd5e1;
+$color-slate-200: #e2e8f0;
+$color-slate-100: #f1f5f9;
+$color-slate-75: #f5f7fb;
+$color-slate-50: #f8fafc;
+
+$color-blue-700: #1d4ed8;
+$color-blue-600: #2563eb;
+$color-blue-500: #3b82f6;
+$color-blue-300: #93c5fd;
+$color-blue-100: #dbeafe;
+
+$color-emerald-800: #065f46;
+$color-emerald-700: #047857;
+$color-emerald-600: #059669;
+$color-emerald-500: #10b981;
+$color-emerald-400: #34d399;
+$color-emerald-300: #6ee7b7;
+$color-emerald-200: #a7f3d0;
+$color-emerald-100: #d1fae5;
+$color-emerald-50: #f0fdf4;
+
+$color-indigo-500: #6366f1;
+$color-violet-500: #8b5cf6;
+$color-violet-600: #7c3aed;
+$color-violet-100: #ede9fe;
+$color-violet-50: #f5f3ff;
+
+$color-orange-600: #ea580c;
+$color-orange-500: #f97316;
+
+$color-red-600: #dc2626;
+$color-red-500: #ef4444;
+
+$color-green-600: #16a34a;
+
+$border-default: 1px solid rgba($color-slate-300, 0.85);
+$border-strong: 1px solid rgba($color-slate-400, 0.72);
+$border-soft: 1px solid rgba($color-slate-200, 0.95);
+
+$shadow-soft: 0 8px 20px rgba($color-slate-900, 0.08);
+$shadow-card: 0 16px 34px rgba($color-slate-900, 0.12);
+$shadow-lift: 0 18px 40px rgba($color-slate-900, 0.15);
+$shadow-inset-highlight: inset 0 1px 0 rgba($color-white, 0.6);
+
+$radius-sm: 12px;
+$radius-md: 16px;
+$radius-lg: 24px;
+$radius-xl: 28px;
+
+$blur-amount: 14px;

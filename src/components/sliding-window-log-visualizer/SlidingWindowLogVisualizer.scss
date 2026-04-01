@@ -1,0 +1,62 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.swl-visualizer {
+  @include surface-card(
+    $width: min(340px, 100%),
+    $padding: 16px,
+    $radius: 20px,
+    $background: linear-gradient(180deg, $color-white 0%, #f7f5ff 100%),
+    $shadow: $shadow-soft
+  );
+}
+
+.swl-visualizer__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-slate-700;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.swl-visualizer__bar {
+  height: 14px;
+  background: rgba($color-slate-200, 0.52);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swl-visualizer__fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3c86ff 0%, #5e6ef6 46%, #8d62ff 100%);
+  transition: width 0.24s ease;
+}
+
+.swl-visualizer__timeline {
+  margin-top: 12px;
+  height: 5px;
+  border-radius: 999px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba($color-slate-300, 0.7),
+    rgba($color-slate-300, 0.7) 8px,
+    rgba($color-white, 0.95) 8px,
+    rgba($color-white, 0.95) 16px
+  );
+  animation: swl-scroll 2.2s linear infinite;
+}
+
+@keyframes swl-scroll {
+  from {
+    background-position-x: 0;
+  }
+
+  to {
+    background-position-x: 30px;
+  }
+}

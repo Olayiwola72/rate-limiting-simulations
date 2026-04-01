@@ -1,0 +1,80 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.site-footer {
+  margin: 8px 10px 10px;
+  border: $border-soft;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #101826 0%, #0a111d 100%);
+}
+
+.site-footer__content {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.site-footer__text {
+  margin: 0;
+  font-size: 0.84rem;
+  letter-spacing: 0.01em;
+  color: rgba($color-slate-200, 0.92);
+}
+
+.site-footer__actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.site-footer__icon-link {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba($color-slate-500, 0.44);
+  background: rgba($color-slate-800, 0.9);
+  color: $color-slate-100;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 160ms ease, background-color 160ms ease;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    background: rgba($color-slate-700, 0.95);
+  }
+}
+
+.site-footer__resume-link {
+  text-decoration: none;
+  color: $color-blue-300;
+  font-weight: 600;
+  font-size: 0.86rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.site-footer__hire-btn {
+  @include action-button-base($padding: 8px 14px, $hover-brightness: 1.03);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  background: linear-gradient(135deg, #3a81ff 0%, #2b67e4 100%);
+  font-weight: 700;
+  text-decoration: none;
+}

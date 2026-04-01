@@ -1,0 +1,39 @@
+@use "./styles/variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+  color: $color-slate-900;
+  background: linear-gradient(180deg, #eff3f9 0%, #f5f7fb 55%, #f7f9fc 100%);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  padding: 14px 12px 2px;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    padding: 8px 8px 2px;
+  }
+}

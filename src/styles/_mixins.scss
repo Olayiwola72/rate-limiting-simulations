@@ -1,0 +1,148 @@
+@use "./variables" as *;
+
+@mixin surface-card(
+  $width: min(980px, 100%),
+  $padding: 24px,
+  $radius: $radius-lg,
+  $border: $border-default,
+  $background: $color-white,
+  $shadow: $shadow-card
+) {
+  width: $width;
+  background: $background;
+  border-radius: $radius;
+  padding: $padding;
+  border: $border;
+  box-shadow: $shadow, $shadow-inset-highlight;
+}
+
+@mixin page-canvas($gradient-a, $gradient-b, $gradient-c, $padding: 28px) {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $padding;
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(90% 70% at 8% 10%, $gradient-a 0%, transparent 60%),
+    radial-gradient(70% 70% at 92% 8%, $gradient-b 0%, transparent 62%),
+    linear-gradient(180deg, $gradient-c 0%, $color-slate-75 100%);
+}
+
+@mixin page-back-link($color: $color-slate-700, $hover: $color-slate-900) {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $color;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 160ms ease, transform 160ms ease;
+
+  &:hover {
+    color: $hover;
+    transform: translateX(-2px);
+  }
+}
+
+@mixin section-title($color: $color-slate-700) {
+  margin: 0 0 12px;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@mixin input-group-stack($basis: 200px, $gap: 6px) {
+  flex: 1 1 $basis;
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin input-control(
+  $padding: 11px 13px,
+  $radius: $radius-sm,
+  $border-color: rgba($color-slate-300, 0.9),
+  $font-size: 0.95rem,
+  $focus-color: $color-blue-500,
+  $focus-ring: 0 0 0 4px rgba($color-blue-500, 0.16)
+) {
+  appearance: none;
+  border: 1px solid $border-color;
+  border-radius: $radius;
+  padding: $padding;
+  font-size: $font-size;
+  font-weight: 500;
+  background: $color-white;
+  color: $color-slate-900;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+
+  &:focus {
+    border-color: $focus-color;
+    box-shadow: $focus-ring;
+    background: $color-white;
+  }
+}
+
+@mixin simulation-layout($margin-top: 18px, $gap: 32px, $align-items: center) {
+  margin-top: $margin-top;
+  display: flex;
+  justify-content: center;
+  align-items: $align-items;
+  gap: $gap;
+  flex-wrap: wrap;
+}
+
+@mixin stats-panel(
+  $padding: 16px 18px,
+  $radius: $radius-md,
+  $background: linear-gradient(180deg, $color-white 0%, $color-slate-75 100%),
+  $border-color: rgba($color-slate-300, 0.95),
+  $text-color: $color-slate-900,
+  $min-width: 220px
+) {
+  background: $background;
+  border: 1px solid $border-color;
+  border-radius: $radius;
+  padding: $padding;
+  color: $text-color;
+  min-width: $min-width;
+  box-shadow: 0 10px 24px rgba($color-slate-900, 0.07);
+}
+
+@mixin action-button-base(
+  $padding: 10px 16px,
+  $radius: $radius-sm,
+  $weight: 600,
+  $hover-brightness: 1.03
+) {
+  border: 0;
+  border-radius: $radius;
+  padding: $padding;
+  font-weight: $weight;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  color: $color-white;
+  transition: transform 160ms ease, filter 160ms ease, box-shadow 180ms ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    filter: brightness($hover-brightness);
+    box-shadow: 0 10px 18px rgba($color-slate-900, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@mixin centered-graph-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

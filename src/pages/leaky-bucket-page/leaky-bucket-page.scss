@@ -1,0 +1,221 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.lb-page {
+  @include page-canvas(rgba($color-red-500, 0.16), rgba($color-orange-500, 0.16), #fff8f5, 26px);
+}
+
+.lb-page__card {
+  @include surface-card($padding: 16px, $radius: $radius-xl);
+}
+
+.lb-page__topbar {
+  margin-bottom: 8px;
+}
+
+.lb-page__back-link {
+  @include page-back-link($color: $color-red-600, $hover: $color-slate-900);
+}
+
+.lb-page__title {
+  margin: 6px 0 0;
+  text-align: center;
+  font-size: clamp(1.35rem, 1.9vw, 1.75rem);
+  letter-spacing: -0.02em;
+  color: $color-slate-900;
+}
+
+.lb-page__section {
+  margin-top: 12px;
+}
+
+.lb-page__section-title {
+  @include section-title($color: $color-red-600);
+}
+
+.lb-page__inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lb-page__input-group {
+  @include input-group-stack($basis: 180px, $gap: 6px);
+
+  label {
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: $color-slate-700;
+    letter-spacing: 0.02em;
+  }
+
+  input {
+    @include input-control($focus-color: $color-red-500, $focus-ring: 0 0 0 4px rgba($color-red-500, 0.16));
+  }
+}
+
+.lb-page__button {
+  @include action-button-base($padding: 9px 13px, $hover-brightness: 1.02);
+  font-size: 0.89rem;
+}
+
+.lb-page__button--primary {
+  margin-top: 8px;
+  min-height: 38px;
+  background: linear-gradient(135deg, #f16272 0%, #d9465d 100%);
+}
+
+.lb-page__button--success {
+  background: linear-gradient(135deg, #1dbf7b 0%, #0ea765 100%);
+}
+
+.lb-page__button--danger {
+  background: linear-gradient(135deg, #f25561 0%, #d63849 100%);
+}
+
+.lb-page__simulation {
+  @include simulation-layout($margin-top: 12px, $gap: 18px);
+}
+
+.lb-page__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: min(220px, 100%);
+}
+
+.lb-page__visual-label {
+  margin: 0;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-red-600;
+}
+
+.lb-page__visual-caption {
+  margin: 0;
+  font-size: 0.84rem;
+  color: $color-slate-600;
+  text-align: center;
+  max-width: 220px;
+}
+
+.lb-page__stats {
+  @include stats-panel(
+    $padding: 12px 14px,
+    $background: linear-gradient(180deg, #ffffff 0%, #fff5f5 100%),
+    $border-color: rgba($color-red-500, 0.2),
+    $min-width: 200px
+  );
+
+  p {
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: $color-slate-700;
+
+    strong {
+      color: $color-slate-900;
+    }
+  }
+}
+
+.lb-page__actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.lb-page__section--graph {
+  margin-top: 12px;
+
+  .lb-page__section-title {
+    text-align: center;
+  }
+}
+
+.lb-page__graph-wrap {
+  @include centered-graph-wrap;
+}
+
+@media (max-width: 768px) {
+  .lb-page {
+    padding: 16px 10px;
+  }
+
+  .lb-page__card {
+    padding: 16px;
+  }
+
+  .lb-page__title {
+    font-size: clamp(1.5rem, 6.8vw, 1.9rem);
+  }
+
+  .lb-page__section {
+    margin-top: 12px;
+  }
+}
+
+@media (max-height: 900px) {
+  .lb-page {
+    padding: 14px;
+  }
+
+  .lb-page__card {
+    padding: 14px;
+  }
+
+  .lb-page__title {
+    font-size: 1.3rem;
+  }
+
+  .lb-page__section {
+    margin-top: 10px;
+  }
+
+  .lb-page__simulation {
+    margin-top: 10px;
+    gap: 16px;
+  }
+
+  .lb-page__visual-caption {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-height: 820px) {
+  .lb-page {
+    padding: 12px;
+  }
+
+  .lb-page__card {
+    padding: 12px;
+  }
+
+  .lb-page__title {
+    font-size: 1.2rem;
+  }
+
+  .lb-page__section-title {
+    margin-bottom: 8px;
+    font-size: 0.74rem;
+  }
+
+  .lb-page__section,
+  .lb-page__section--graph {
+    margin-top: 8px;
+  }
+
+  .lb-page__input-group label,
+  .lb-page__visual-label {
+    font-size: 0.7rem;
+  }
+
+  .lb-page__stats p,
+  .lb-page__visual-caption,
+  .lb-page__button {
+    font-size: 0.82rem;
+  }
+}

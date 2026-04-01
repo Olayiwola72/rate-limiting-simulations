@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="86" y1="24" x2="1192" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DBEAFE" />
+      <stop offset="0.45" stop-color="#EEF2FF" />
+      <stop offset="1" stop-color="#FFE4E6" />
+    </linearGradient>
+    <linearGradient id="flow" x1="218" y1="172" x2="464" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6" />
+      <stop offset="0.5" stop-color="#6366F1" />
+      <stop offset="1" stop-color="#F25561" />
+    </linearGradient>
+    <linearGradient id="meter" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#22C55E" />
+      <stop offset="1" stop-color="#F97316" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" rx="32" fill="url(#bg)" />
+  <rect x="92" y="74" width="1096" height="492" rx="34" fill="#FFFFFF" fill-opacity="0.9" stroke="#CBD5E1" stroke-width="2" />
+
+  <g transform="translate(138 138)">
+    <path d="M72 16H216L252 100V282C252 312.928 226.928 338 196 338H92C61.072 338 36 312.928 36 282V100L72 16Z" fill="#FFFFFF" stroke="#334155" stroke-width="8" stroke-linejoin="round" />
+    <path d="M80 38H208L232 94H56L80 38Z" fill="#E2E8F0" />
+    <path d="M60 278V180C60 128.085 102.085 86 154 86H154C205.915 86 248 128.085 248 180V278C248 299.539 230.539 317 209 317H99C77.461 317 60 299.539 60 278Z" fill="url(#flow)" />
+    <path d="M108 -8V52" stroke="#0F172A" stroke-width="10" stroke-linecap="round" />
+    <path d="M154 -20V52" stroke="#0F172A" stroke-width="10" stroke-linecap="round" />
+    <path d="M200 -8V52" stroke="#0F172A" stroke-width="10" stroke-linecap="round" />
+    <circle cx="8" cy="68" r="18" fill="#3B82F6" />
+    <circle cx="-8" cy="118" r="14" fill="#6366F1" />
+    <circle cx="-18" cy="162" r="11" fill="#F25561" />
+    <path d="M6 68C40 82 56 102 62 124" stroke="url(#meter)" stroke-width="10" stroke-linecap="round" />
+    <rect x="282" y="58" width="22" height="82" rx="11" fill="#22C55E" />
+    <rect x="282" y="164" width="22" height="58" rx="11" fill="#F59E0B" />
+    <rect x="282" y="244" width="22" height="34" rx="11" fill="#EF4444" />
+  </g>
+
+  <text x="560" y="228" fill="#0F172A" font-family="Arial, sans-serif" font-size="56" font-weight="700">Rate Limiting Simulations Lab</text>
+  <text x="560" y="286" fill="#475569" font-family="Arial, sans-serif" font-size="30">Interactive visual playground for system design concepts</text>
+
+  <g transform="translate(560 344)">
+    <rect width="176" height="54" rx="16" fill="#EFF6FF" />
+    <text x="88" y="34" text-anchor="middle" fill="#1D4ED8" font-family="Arial, sans-serif" font-size="24" font-weight="700">Token Bucket</text>
+    <rect x="196" width="170" height="54" rx="16" fill="#ECFDF5" />
+    <text x="281" y="34" text-anchor="middle" fill="#047857" font-family="Arial, sans-serif" font-size="24" font-weight="700">Fixed Window</text>
+    <rect x="386" width="224" height="54" rx="16" fill="#F5F3FF" />
+    <text x="498" y="34" text-anchor="middle" fill="#6D28D9" font-family="Arial, sans-serif" font-size="24" font-weight="700">Sliding Windows</text>
+  </g>
+
+  <g transform="translate(560 438)">
+    <rect width="170" height="54" rx="16" fill="#FFF1F2" />
+    <text x="85" y="34" text-anchor="middle" fill="#DC2626" font-family="Arial, sans-serif" font-size="24" font-weight="700">Leaky Bucket</text>
+    <path d="M220 27H548" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round" />
+    <path d="M228 27C274 0 322 0 368 27C414 54 462 54 508 27" stroke="url(#flow)" stroke-width="8" stroke-linecap="round" />
+  </g>
+
+  <text x="560" y="534" fill="#64748B" font-family="Arial, sans-serif" font-size="24">Learn traffic shaping, request control, and algorithm tradeoffs through live simulations</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF6FF" />
+      <stop offset="1" stop-color="#FFEDE8" />
+    </linearGradient>
+    <linearGradient id="flow" x1="16" y1="14" x2="48" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6" />
+      <stop offset="0.55" stop-color="#6366F1" />
+      <stop offset="1" stop-color="#F25561" />
+    </linearGradient>
+    <linearGradient id="meter" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#22C55E" />
+      <stop offset="1" stop-color="#F97316" />
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bg)" />
+  <rect x="4" y="4" width="56" height="56" rx="16" stroke="#CBD5E1" stroke-width="1.5" />
+
+  <path
+    d="M22 16H42L47 27V45C47 48.314 44.314 51 41 51H23C19.686 51 17 48.314 17 45V27L22 16Z"
+    fill="#fff"
+    stroke="#334155"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M23 18H41L44.5 26H19.5L23 18Z"
+    fill="#E2E8F0"
+  />
+
+  <path
+    d="M21 44.5V35.5C21 30.806 24.806 27 29.5 27H34.5C39.194 27 43 30.806 43 35.5V44.5C43 46.433 41.433 48 39.5 48H24.5C22.567 48 21 46.433 21 44.5Z"
+    fill="url(#flow)"
+  />
+
+  <path
+    d="M27 12.5V20.5"
+    stroke="#0F172A"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M32 10.5V20.5"
+    stroke="#0F172A"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M37 12.5V20.5"
+    stroke="#0F172A"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+
+  <rect x="50" y="17" width="4" height="10" rx="2" fill="#22C55E" />
+  <rect x="50" y="30" width="4" height="7" rx="2" fill="#F59E0B" />
+  <rect x="50" y="40" width="4" height="4" rx="2" fill="#EF4444" />
+
+  <circle cx="14" cy="18" r="3" fill="#3B82F6" />
+  <circle cx="11" cy="25" r="2.5" fill="#6366F1" />
+  <circle cx="9.5" cy="31.5" r="2" fill="#F25561" />
+
+  <path
+    d="M13 18C18 20 20 23 20 27"
+    stroke="url(#meter)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+</svg>

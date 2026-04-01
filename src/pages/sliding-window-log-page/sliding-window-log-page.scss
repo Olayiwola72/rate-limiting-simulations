@@ -1,0 +1,138 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.swl-page {
+  @include page-canvas(rgba($color-violet-100, 0.72), rgba($color-blue-100, 0.52), #f6f6ff, 26px);
+}
+
+.swl-page__card {
+  @include surface-card($padding: 18px, $radius: $radius-xl);
+}
+
+.swl-page__topbar {
+  margin-bottom: 8px;
+}
+
+.swl-page__back-link {
+  @include page-back-link;
+}
+
+.swl-page__title {
+  text-align: center;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  letter-spacing: -0.02em;
+  color: $color-slate-900;
+}
+
+.swl-page__section {
+  margin-top: 14px;
+}
+
+.swl-page__section-title {
+  @include section-title;
+  text-align: center;
+}
+
+.swl-page__inputs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.swl-page__input-group {
+  @include input-group-stack;
+
+  label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: $color-slate-700;
+    letter-spacing: 0.02em;
+  }
+
+  input {
+    @include input-control;
+  }
+}
+
+.swl-page__simulation {
+  @include simulation-layout($margin-top: 14px, $gap: 20px);
+}
+
+.swl-page__stats {
+  @include stats-panel($padding: 14px 16px, $min-width: 205px);
+
+  p {
+    margin: 8px 0;
+    color: $color-slate-700;
+    font-size: 0.94rem;
+
+    strong {
+      color: $color-slate-900;
+    }
+  }
+}
+
+.swl-page__actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.swl-page__button {
+  @include action-button-base($padding: 9px 13px);
+  margin-top: 8px;
+  font-size: 0.92rem;
+}
+
+.swl-page__button--primary {
+  background: linear-gradient(135deg, #8f65ff 0%, #7048e0 100%);
+  margin-top: 10px;
+}
+
+.swl-page__button--success {
+  background: linear-gradient(135deg, #1dbf7b 0%, #0ea765 100%);
+}
+
+.swl-page__button--danger {
+  background: linear-gradient(135deg, #f25561 0%, #d63849 100%);
+}
+
+.swl-page__graph-wrap {
+  @include centered-graph-wrap;
+}
+
+@media (max-width: 768px) {
+  .swl-page {
+    padding: 16px 10px;
+  }
+
+  .swl-page__card {
+    padding: 16px;
+  }
+
+  .swl-page__title {
+    font-size: clamp(1.5rem, 6.8vw, 1.9rem);
+  }
+
+  .swl-page__section {
+    margin-top: 12px;
+  }
+
+  .swl-page__actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-height: 900px) {
+  .swl-page {
+    padding: 16px;
+  }
+
+  .swl-page__card {
+    padding: 16px;
+  }
+
+  .swl-page__title {
+    font-size: 1.35rem;
+  }
+}

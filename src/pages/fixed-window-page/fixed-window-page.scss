@@ -1,0 +1,143 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.fw-page {
+  @include page-canvas(rgba($color-blue-100, 0.75), rgba($color-blue-300, 0.28), #f4f8ff, 26px);
+}
+
+.fw-page__card {
+  @include surface-card($padding: 18px, $radius: $radius-xl);
+}
+
+.fw-page__topbar {
+  margin-bottom: 8px;
+}
+
+.fw-page__back-link {
+  @include page-back-link;
+}
+
+.fw-page__title {
+  text-align: center;
+  font-size: clamp(1.45rem, 2.1vw, 1.9rem);
+  letter-spacing: -0.02em;
+  color: $color-slate-900;
+}
+
+.fw-page__section {
+  margin-top: 14px;
+}
+
+.fw-page__section-title {
+  @include section-title;
+}
+
+.fw-page__inputs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.fw-page__input-group {
+  @include input-group-stack;
+
+  label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: $color-slate-700;
+    letter-spacing: 0.02em;
+  }
+
+  input {
+    @include input-control;
+  }
+}
+
+.fw-page__simulation {
+  @include simulation-layout($margin-top: 14px, $gap: 22px);
+}
+
+.fw-page__stats {
+  @include stats-panel($padding: 14px 16px, $min-width: 205px);
+
+  p {
+    margin: 8px 0;
+    color: $color-slate-700;
+    font-size: 0.94rem;
+
+    strong {
+      color: $color-slate-900;
+    }
+  }
+}
+
+.fw-page__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.fw-page__button {
+  @include action-button-base($padding: 9px 13px);
+  font-size: 0.92rem;
+}
+
+.fw-page__button--primary {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #3a81ff 0%, #2b67e4 100%);
+}
+
+.fw-page__button--success {
+  background: linear-gradient(135deg, #1dbf7b 0%, #0ea765 100%);
+}
+
+.fw-page__button--danger {
+  background: linear-gradient(135deg, #f25561 0%, #d63849 100%);
+}
+
+.fw-page__graph-wrap {
+  @include centered-graph-wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.fw-page__graph-wrap .fw-page__section-title {
+  margin: 4px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .fw-page {
+    padding: 16px 10px;
+  }
+
+  .fw-page__card {
+    padding: 16px;
+  }
+
+  .fw-page__title {
+    font-size: clamp(1.5rem, 6.8vw, 1.9rem);
+  }
+
+  .fw-page__section {
+    margin-top: 12px;
+  }
+
+  .fw-page__actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-height: 900px) {
+  .fw-page {
+    padding: 16px;
+  }
+
+  .fw-page__card {
+    padding: 16px;
+  }
+
+  .fw-page__title {
+    font-size: 1.4rem;
+  }
+}

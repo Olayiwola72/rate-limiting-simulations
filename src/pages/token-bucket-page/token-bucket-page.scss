@@ -1,0 +1,154 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.token-page {
+  @include page-canvas(rgba($color-blue-300, 0.45), rgba($color-indigo-500, 0.18), #f1f6ff, 26px);
+}
+
+.token-page__card {
+  @include surface-card($padding: 18px, $radius: $radius-xl);
+}
+
+.token-page__topbar {
+  margin-bottom: 8px;
+}
+
+.token-page__back-link {
+  @include page-back-link;
+}
+
+.token-page__title {
+  margin: 6px 0 0;
+  text-align: center;
+  font-size: clamp(1.45rem, 2.1vw, 1.9rem);
+  letter-spacing: -0.02em;
+  color: $color-slate-900;
+}
+
+.token-page__section {
+  margin-top: 14px;
+}
+
+.token-page__section-title {
+  @include section-title;
+}
+
+.token-page__inputs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.token-page__input-group {
+  @include input-group-stack($basis: 190px, $gap: 7px);
+
+  label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: $color-slate-700;
+    letter-spacing: 0.02em;
+  }
+
+  input {
+    @include input-control;
+  }
+}
+
+.token-page__simulation {
+  @include simulation-layout($margin-top: 14px, $gap: 22px);
+}
+
+.token-page__stats {
+  @include stats-panel($padding: 14px 16px, $text-color: $color-slate-900, $min-width: 210px);
+
+  p {
+    margin: 8px 0;
+    color: $color-slate-700;
+    font-size: 0.94rem;
+
+    strong {
+      color: $color-slate-900;
+    }
+  }
+}
+
+.token-page__actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.token-page__button {
+  @include action-button-base($padding: 9px 13px, $hover-brightness: 1.02);
+  font-size: 0.92rem;
+}
+
+.token-page__button--primary {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #3a81ff 0%, #2b67e4 100%);
+  min-height: 40px;
+}
+
+.token-page__button--success {
+  background: linear-gradient(135deg, #1dbf7b 0%, #0ea765 100%);
+}
+
+.token-page__button--danger {
+  background: linear-gradient(135deg, #f25561 0%, #d63849 100%);
+}
+
+.token-page__section--graph {
+  margin-top: 14px;
+
+  .token-page__section-title {
+    text-align: center;
+  }
+}
+
+.token-page__graph-wrap {
+  @include centered-graph-wrap;
+}
+
+@media (max-width: 768px) {
+  .token-page {
+    padding: 16px 10px;
+  }
+
+  .token-page__card {
+    padding: 16px;
+  }
+
+  .token-page__title {
+    font-size: clamp(1.5rem, 6.8vw, 1.9rem);
+  }
+
+  .token-page__section {
+    margin-top: 12px;
+  }
+
+  .token-page__section-title {
+    margin-bottom: 10px;
+  }
+
+  .token-page__actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-height: 900px) {
+  .token-page {
+    padding: 16px;
+  }
+
+  .token-page__card {
+    padding: 16px;
+  }
+
+  .token-page__title {
+    font-size: 1.4rem;
+  }
+
+  .token-page__section {
+    margin-top: 12px;
+  }
+}

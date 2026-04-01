@@ -1,0 +1,9 @@
+@use "../../styles/variables" as *;
+
+.throughput-graph {
+  border: $border-default;
+  border-radius: 14px;
+  background: linear-gradient(180deg, $color-white 0%, $color-slate-75 100%);
+  box-shadow: 0 8px 20px rgba($color-slate-900, 0.08);
+  overflow: hidden;
+}
