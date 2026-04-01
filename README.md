@@ -27,11 +27,11 @@ Add visuals here so visitors can immediately see the app in action.
 
 ### App Preview
 
-![Simulation Lab Screenshot](./docs/media/screenshot-home-placeholder.svg)
+![Simulation Lab Screenshot](./docs/media/app-preview.png)
 
 ### Interactive Demo GIF
 
-![Simulation Lab Demo](./docs/media/simulation-demo-placeholder.svg)
+![Simulation Lab Demo](./docs/media/interactive-demo.gif)
 
 Suggested captures:
 
@@ -39,12 +39,6 @@ Suggested captures:
 - token bucket running under burst traffic
 - leaky bucket queue filling and draining
 - throughput graph reacting to allowed and rejected requests
-
-### Social Preview
-
-Use this image for GitHub repository social preview or link sharing banners:
-
-![Social Preview](./docs/social-preview.svg)
 
 Production URL:
 
@@ -166,6 +160,5 @@ Built by Olayiwola Akinnagbe.
 - Twitter: https://twitter.com/OlayiwolaAkinn1
 - Portfolio: https://olayiwola-akinnagbe.netlify.app/
 - Resume: https://drive.google.com/file/d/119Hkfzy2sHD9gm9V5Oe4m0Xm5vamPNgt/view?usp=sharing
-- Email: olayiwola72@gmail.com
 
 If you would like to collaborate, give feedback, or hire me, feel free to reach out.
