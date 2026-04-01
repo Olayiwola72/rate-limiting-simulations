@@ -1,10 +1,10 @@
-# Rate Limiting Simulations Lab
+# ⚙️ Rate Limiting Simulations Lab
 
 An interactive simulation lab for exploring how popular rate limiting algorithms behave under load.
 
 This project is built to help developers, students, and interview candidates understand rate limiting visually instead of only reading theory. Each page lets you tweak request settings, run a live simulation, and watch how requests are allowed, rejected, queued, or drained over time.
 
-## What This Project Is About
+## 🔎 Overview
 
 Rate limiting is one of the most important ideas in backend systems, API protection, and traffic shaping. This lab turns those ideas into hands-on simulations so you can:
 
@@ -15,13 +15,13 @@ Rate limiting is one of the most important ideas in backend systems, API protect
 
 This is not just a demo app. It is a learning and sharing tool for understanding system design concepts through interaction.
 
-## Live Demo
+## 🌐 Live Demo
 
 Try the lab here:
 
-- Live demo: https://rate-limiting-simulations.netlify.app/
+- `Live site`: https://rate-limiting-simulations.netlify.app/
 
-## Screenshots And GIFs
+## 🖼️ Visual Preview
 
 Add visuals here so visitors can immediately see the app in action.
 
@@ -44,7 +44,7 @@ Production URL:
 
 - https://rate-limiting-simulations.netlify.app/
 
-## Included Simulations
+## 🧪 Included Simulations
 
 - Token Bucket
 - Fixed Window
@@ -59,7 +59,7 @@ Each simulation includes:
 - visual state feedback
 - throughput history graphs
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - React
 - TypeScript
@@ -68,7 +68,7 @@ Each simulation includes:
 - React Router
 - ECharts
 
-## Local Development
+## 💻 Local Development
 
 Clone the repository and install dependencies:
 
@@ -96,7 +96,7 @@ Preview the production build locally:
 npm run preview
 ```
 
-## Deployment
+## 🚀 Deployment
 
 This app is a static frontend, so it can be deployed easily on platforms like:
 
@@ -121,7 +121,7 @@ This app is a static frontend, so it can be deployed easily on platforms like:
 
 You can also deploy the built `dist` output using GitHub Actions or a GitHub Pages deployment workflow.
 
-## Fork And Share
+## 🤝 Fork And Share
 
 If you find this project useful:
 
@@ -138,7 +138,7 @@ Interesting extension ideas:
 - show latency and queue delay metrics
 - support dark mode and accessibility themes
 
-## Why This Lab Matters
+## 📘 Why This Lab Matters
 
 A lot of rate limiting explanations stay abstract. This project makes them concrete.
 
@@ -151,7 +151,7 @@ Instead of only hearing that:
 
 You can actually see those tradeoffs happen.
 
-## Contact
+## 📫 Contact
 
 Built by Olayiwola Akinnagbe.
 
