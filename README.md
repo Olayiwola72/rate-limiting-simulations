@@ -138,6 +138,14 @@ Interesting extension ideas:
 - show latency and queue delay metrics
 - support dark mode and accessibility themes
 
+## 📄 License
+
+This project is licensed under the MIT License.
+
+- License: [MIT](./LICENSE)
+
+You are free to use, modify, fork, and contribute to the project under the terms of that license.
+
 ## 📘 Why This Lab Matters
 
 A lot of rate limiting explanations stay abstract. This project makes them concrete.
