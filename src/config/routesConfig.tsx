@@ -1,11 +1,12 @@
-// routesConfig.tsx
 import React from "react";
-import LandingPage from "../pages/landing-page/landing-page.tsx";
-import TokenBucketPage from "../pages/token-bucket-page/token-bucket-page.tsx";
-import FixedWindowPage from "../pages/fixed-window-page/FixedWindowPage.tsx";
-import SlidingWindowCounterPage from "../pages/sliding-window-counter-page/SlidingWindowCounterPage.tsx";
-import SlidingWindowLogPage from "../pages/sliding-window-log-page/SlidingWindowLogPage.tsx";
-import LeakyBucketPage from "../pages/leaky-bucket-page/LeakyBucketPage.tsx";
+import {
+  FixedWindowPage,
+  LandingPage,
+  LeakyBucketPage,
+  SlidingWindowCounterPage,
+  SlidingWindowLogPage,
+  TokenBucketPage,
+} from "./routePages";
 
 export interface AppRoute {
   path: string;

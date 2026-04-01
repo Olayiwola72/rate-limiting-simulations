@@ -32,6 +32,17 @@ body {
   padding: 14px 12px 2px;
 }
 
+.app-loading {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $color-slate-600;
+}
+
 @media (max-width: 768px) {
   .app-main {
     padding: 8px 8px 2px;

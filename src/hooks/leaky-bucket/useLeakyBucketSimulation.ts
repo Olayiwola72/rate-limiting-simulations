@@ -46,7 +46,6 @@ export const useLeakyBucketSimulation = (
       { capacity, leakRate },
       Date.now()
     );
-    setQueueSize(0);
   }, [capacity, leakRate]);
 
   useEffect(() => {
