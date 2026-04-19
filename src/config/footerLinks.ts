@@ -57,7 +57,7 @@ export const footerLinks: FooterLink[] = [
     {
         type: "text",
         label: "Resume",
-        href: "https://drive.google.com/file/d/14k4zPrIW-oj6jhSDRPlLOC2JDulprBKg/view?usp=drive_link",
+        href: "https://drive.google.com/file/d/10Eo_1hJi5EEXSOfAdAJCA14eIY5MbMMI/view?usp=sharing",
         target: "_blank",
         rel: "noreferrer",
     },
