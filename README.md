@@ -165,6 +165,6 @@ Built by Olayiwola Akinnagbe.
 - LinkedIn: https://www.linkedin.com/in/olayiwola-akinnagbe/
 - Twitter: https://twitter.com/OlayiwolaAkinn1
 - Portfolio: https://olayiwola-akinnagbe.netlify.app/
-- Resume: https://drive.google.com/file/d/119Hkfzy2sHD9gm9V5Oe4m0Xm5vamPNgt/view?usp=sharing
+- Resume: [https://drive.google.com/file/d/119Hkfzy2sHD9gm9V5Oe4m0Xm5vamPNgt/view?usp=sharing](https://drive.google.com/file/d/10Eo_1hJi5EEXSOfAdAJCA14eIY5MbMMI/view)
 
 If you would like to collaborate, give feedback, or hire me, feel free to reach out.
